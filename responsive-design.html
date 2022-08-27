@@ -8,12 +8,12 @@
     <style>
         .flexible{
             display: flex;
-
+            justify-content: center;
         }
         .content{
             padding: 40px;
             background-color: silver;
-            width: auto;
+            width: 500px;
 
         }
         .wrap{
@@ -26,8 +26,10 @@
             width: 150px;
             border-radius: 5px;
         }
-        @media(max-width: 600px){
+        
+        @media(max-width: 500px){
             .flexible{ display: block;}
+            .content{ width: auto;}
             .product img{ margin: auto auto; display: block;}
             .botton{ width: 100%;}
             
